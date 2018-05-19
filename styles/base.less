@@ -1,0 +1,151 @@
+@import "syntax-variables";
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .syntax--marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .syntax--marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
+  background-color: #404040;
+}
+
+.syntax--entity.syntax--name.syntax--class, .syntax--entity.syntax--name.syntax--type, .syntax--entity.syntax--other.syntax--inherited-class, .syntax--support.syntax--class, .syntax--support.syntax--type {
+  color: @class-color;
+}
+
+.syntax--comment, .syntax--punctuation.syntax--definition.syntax--comment {
+  font-style: @comment-font-style;
+  color: @comment-color;
+}
+
+.syntax--constant:not(.constant.other.database-name.sql:not(.constant.other.table-name.sql)), .syntax--support.syntax--constant {
+  color: @constant-color;
+}
+
+.syntax--entity {
+  color: @class-color;
+}
+
+.syntax--entity.syntax--name.syntax--function, .syntax--support.syntax--function {
+  color: @function-color;
+}
+
+.syntax--keyword, .syntax--keyword.syntax--control, .syntax--constant.syntax--language, .syntax--storage, .syntax--variable.syntax--language {
+  font-weight: @keyword-font-weight;
+  color: @keyword-color;
+}
+
+.syntax--constant.syntax--numeric {
+  color: @number-color;
+}
+
+.syntax--keyword.syntax--operator, .syntax--meta.syntax--brace, .syntax--meta.syntax--delimiter, .syntax--meta.syntax--separator, .syntax--meta.syntax--structure, .syntax--punctuation {
+  color: @operator-color;
+}
+
+.syntax--string.syntax--regexp, .syntax--string.syntax--regexp .syntax--constant.syntax--character, .syntax--punctuation.syntax--definition.syntax--regexp {
+  color: @regexp-color;
+}
+
+.syntax--string, .syntax--punctuation.syntax--definition.syntax--string, .syntax--constant.syntax--other.syntax--database-name.syntax--sql, .syntax--constant.syntax--other.syntax--table-name.syntax--sql {
+  color: @string-color;
+}
+
+.syntax--variable, .syntax--support.syntax--variable, .syntax--source.syntax--php .syntax--variable.syntax--language, .syntax--meta.syntax--function.syntax--arguments, .syntax--meta.syntax--function.syntax--parameters, .syntax--punctuation.syntax--definition.syntax--variable {
+  color: @variable-color;
+}
+
+.syntax--entity.syntax--name.syntax--tag, .syntax--punctuation.syntax--definition.syntax--tag {
+  font-weight: @keyword-font-weight;
+  color: @keyword-color;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: @attribute-color;
+}
+
+.syntax--meta.syntax--sgml.syntax--html .syntax--meta.syntax--doctype, .syntax--meta.xml-processing {
+  font-weight: @keyword-font-weight;
+  color: @keyword-color;
+}
+
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--other.syntax--attribute-name.syntax--class {
+  color: @attribute-color;
+}
+
+.syntax--support.syntax--type.syntax--property-name.syntax--css {
+  color: @keyword-color;
+}
+
+.syntax--meta.property-group .syntax--support.syntax--constant.syntax--property-value.syntax--css, .syntax--meta.syntax--property-value .syntax--support.syntax--constant.syntax--property-value.syntax--css {
+  color: @property-color;
+}
+
+.syntax--meta.syntax--preprocessor.syntax--at-rule .syntax--keyword.syntax--control.syntax--at-rule {
+  font-weight: @keyword-font-weight;
+  color: @class-color;
+}
+
+.syntax--meta.syntax--property-value .syntax--support.syntax--constant.named-color.syntax--css, .syntax--meta.syntax--property-value .syntax--constant {
+  color: @attribute-color;
+}
+
+.syntax--meta.syntax--constructor.syntax--argument.syntax--css {
+  color: @string-color;
+}
+
+.syntax--text.syntax--html .syntax--constant.syntax--character, .syntax--text.syntax--html .syntax--punctuation.syntax--definition.syntax--entity {
+  color: @variable-color;
+}
+
+.syntax--invalid {
+  color: #F8F8F0;
+  background-color: #808080;
+}
+
+.syntax--invalid.syntax--deprecated {
+  color: #808080;
+}

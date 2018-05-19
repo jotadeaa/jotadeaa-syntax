@@ -1,0 +1,16 @@
+{
+  "name": "jotadeaa-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Dark syntax theme for Atom, partially based on Turbo C / Turbo Pascal.",
+  "keywords": [
+    "jotadeaa",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/jotadeaa/jotadeaa-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
