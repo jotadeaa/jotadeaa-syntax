@@ -1,8 +1,8 @@
 {
   "name": "jotadeaa-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
-  "description": "Dark syntax theme for Atom, partially based on Turbo C / Turbo Pascal.",
+  "version": "0.0.0",
+  "description": "Dark syntax theme for Atom.",
   "keywords": [
     "jotadeaa",
     "syntax",
